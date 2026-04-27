@@ -21,8 +21,8 @@ export default function Home() {
         <div className="mb-10 flex justify-center">
           <div className="w-40 h-40 bg-white rounded-[2rem] flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden border-8 border-white/50">
             <Image 
-              src="/ironman-logo.png" 
-              alt="Iron Man Logo" 
+              src="/hulk-logo.png" 
+              alt="Hulk Logo" 
               width={140} 
               height={140} 
               className="object-contain"
