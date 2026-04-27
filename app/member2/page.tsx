@@ -2,74 +2,57 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Rocket, Home } from 'lucide-react';
+import { ArrowRight, Diamond, Home, Sparkles } from 'lucide-react';
 
 export default function Member2() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-slate-950 font-sans">
-      {/* 배경 장식 요소: 프리미엄 느낌을 주는 움직이는 조명 효과 */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/20 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/20 blur-[120px] animate-pulse [animation-delay:2s]" />
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-amber-100 to-yellow-200 text-amber-900 p-6 relative overflow-hidden">
+      {/* 장식용 배경 요소 (노란색 빛 효과) */}
+      <div className="absolute top-[-10%] left-[-10%] w-72 h-72 bg-amber-300/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl animate-pulse delay-700" />
 
-      <div className="relative z-10 max-w-xl w-full px-6">
-        <div className="bg-white/5 backdrop-blur-2xl rounded-[2.5rem] p-8 md:p-12 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] border border-white/10 text-center">
-          
-          {/* 상단 로켓 로고: 통통 튀는 애니메이션 적용 */}
-          <div className="mb-10 flex justify-center">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-blue-500 rounded-3xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
-              <div className="relative w-24 h-24 bg-gradient-to-tr from-primary to-blue-600 rounded-3xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                <Rocket className="w-12 h-12 text-white animate-bounce" style={{ animationDuration: '3s' }} />
-              </div>
-            </div>
-          </div>
-
-          {/* 헤더 섹션 */}
-          <div className="space-y-2 mb-8">
-            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase rounded-full border border-primary/20">
-              Team Member 02
-            </span>
-            <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight">
-              혁신을 쏘아올리는 <br/> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-                공간 크리에이터
-              </span>
-            </h1>
-          </div>
-
-          {/* 본문 텍스트 */}
-          <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-sm mx-auto">
-            HELLO! 팀원 2입니다. <br />
-            오벤져스와 함께 당신의 소중한 공간에 <br />
-            새로운 생명력을 불어넣고 있습니다. ✨
-          </p>
-
-          {/* 액션 버튼 */}
-          <div className="flex flex-col gap-4">
-            <Link
-              href="/member3"
-              className="group relative flex items-center justify-center gap-3 bg-white text-slate-950 font-black py-5 px-10 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 overflow-hidden shadow-[0_20px_40px_-10px_rgba(255,255,255,0.2)]"
-            >
-              <span className="relative z-10 text-lg">다음 멤버 탐험하기</span>
-              <ArrowRight className="relative z-10 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
-            </Link>
-            
-            <Link 
-              href="/" 
-              className="flex items-center justify-center gap-2 text-gray-500 hover:text-white transition-colors py-2 text-sm font-medium"
-            >
-              <Home className="w-4 h-4" />
-              메인 스테이션으로 돌아가기
-            </Link>
+      <div className="max-w-md w-full bg-white/40 backdrop-blur-xl rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(251,191,36,0.15)] border border-white/60 text-center relative z-10 transform hover:scale-[1.02] transition-transform duration-500">
+        <div className="mb-8 flex justify-center relative">
+          <div className="w-24 h-24 bg-gradient-to-tr from-amber-200/50 to-yellow-100/30 rounded-3xl flex items-center justify-center shadow-inner group relative overflow-hidden">
+            <Diamond className="w-12 h-12 text-amber-600 animate-[spin_8s_linear_infinite] group-hover:scale-110 transition-transform duration-300" />
+            <Sparkles className="absolute top-2 right-2 w-4 h-4 text-amber-400/50 animate-bounce" />
           </div>
         </div>
 
-        {/* 하단 장식 요소 */}
-        <div className="mt-12 flex justify-center gap-8 opacity-20">
-          <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-white" />
-          <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-white" />
+        <div className="relative inline-block mb-4">
+          <h1 className="text-8xl font-black text-amber-600 opacity-10 absolute -top-8 -left-4 select-none">02</h1>
+          <h2 className="text-3xl font-extrabold tracking-tight mb-2 relative z-10 text-amber-900">팀원 2의 공간</h2>
+          <div className="h-1.5 w-12 bg-amber-400/40 mx-auto rounded-full mb-6" />
+        </div>
+
+        <p className="text-amber-800/80 mb-10 leading-relaxed font-medium">
+          안녕하세요! <span className="text-amber-900 font-bold underline decoration-amber-400/30 underline-offset-4">팀원 2</span>입니다.<br />
+          우리는 지금 깃허브 포크와 협업을<br />
+          예술처럼 연습하고 있습니다. ✨
+        </p>
+
+        <Link
+          href="/member3"
+          className="group relative flex items-center justify-center gap-3 bg-amber-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-amber-600 transition-all duration-300 shadow-[0_10px_20px_rgba(245,158,11,0.2)] overflow-hidden"
+        >
+          <span className="relative z-10">다음 여정으로 (팀원 3)</span>
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform relative z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+        </Link>
+
+        <div className="mt-10">
+          <Link href="/" className="text-amber-700/40 hover:text-amber-800 flex items-center justify-center gap-2 text-sm transition-all hover:gap-3 group">
+            <Home className="w-4 h-4 group-hover:scale-110" />
+            홈으로 돌아가기
+          </Link>
         </div>
       </div>
+
+      <style jsx global>{`
+        @keyframes shimmer {
+          100% { transform: translateX(100%); }
+        }
+      `}</style>
     </div>
   );
 }
