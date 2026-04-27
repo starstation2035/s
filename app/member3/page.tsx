@@ -15,7 +15,7 @@ export default function Member3() {
         </div>
         
         <h1 className="text-7xl font-black mb-2 opacity-90">03</h1>
-        <h2 className="text-2xl font-bold mb-6">팀원 3 담당 페이지</h2>
+        <h2 className="text-2xl font-bold mb-6">서희정 반짝 반짝</h2>
         
         <p className="text-white/70 mb-10 leading-relaxed">
           반갑습니다! 팀원 3입니다.<br/>
