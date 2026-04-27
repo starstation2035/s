@@ -39,7 +39,7 @@ export default function Member2() {
 
           {/* 본문 텍스트 */}
           <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-sm mx-auto">
-            안녕하세요! 팀원 2입니다. <br />
+            HELLO! 팀원 2입니다. <br />
             오벤져스와 함께 당신의 소중한 공간에 <br />
             새로운 생명력을 불어넣고 있습니다. ✨
           </p>
