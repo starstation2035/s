@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Sparkles, Rocket } from 'lucide-react';
 
-export default function Home() {
+export default function Member1Page() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#3B82F6] text-white p-6 font-sans">
       <div className="max-w-2xl w-full bg-white/10 backdrop-blur-xl rounded-[2.5rem] p-12 md:p-16 shadow-2xl border border-white/20 text-center relative overflow-hidden">
@@ -43,14 +43,14 @@ export default function Home() {
         
         {/* Main Title */}
         <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight leading-tight">
-          오벤져스 팀 협업<br/>
-          <span className="text-yellow-300">연습 프로젝트</span>
+          팀원 1 페이지<br/>
+          <span className="text-yellow-300">오벤져스 팀 협업</span>
         </h1>
         
         {/* Description */}
         <p className="text-white/80 text-lg md:text-xl mb-12 font-medium max-w-md mx-auto leading-relaxed">
-          깃허브 워크플로우와 팀 협업을 위한<br/>
-          실습 공간에 오신 것을 환영합니다!
+          여기가 팀원 1의 메인 공간입니다!<br/>
+          팀 협업을 위한 작업 공간입니다.
         </p>
 
         {/* Action Button */}
@@ -60,23 +60,14 @@ export default function Home() {
             className="group relative inline-flex items-center justify-center gap-3 bg-[#E62429] hover:bg-[#B11B1F] text-white text-xl md:text-2xl font-bold py-6 px-10 rounded-2xl shadow-[0_10px_30px_rgba(230,36,41,0.4)] hover:shadow-[0_15px_40px_rgba(230,36,41,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            <span>협업 연습 시작하기 (팀원 2에게 이동)</span>
+            <span>팀원 2 페이지로 이동</span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </Link>
           
           <span className="text-white/50 text-sm font-medium uppercase tracking-widest">
-            Ready to collaborate?
+            Go to Member 2
           </span>
         </div>
-      </div>
-
-      {/* Footer Info */}
-      <div className="mt-12 flex gap-8 text-white/40 font-bold text-sm">
-        <span>TEAM O-VENGERS</span>
-        <span>•</span>
-        <span>GITHUB WORKFLOW</span>
-        <span>•</span>
-        <span>2024</span>
       </div>
     </div>
   );
