@@ -2,15 +2,15 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { RotateCcw, Settings, Home } from 'lucide-react';
+import { RotateCcw, Smartphone, Home } from 'lucide-react';
 
 export default function Member5() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#F59E0B] text-white p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#84CC16] text-white p-6">
       <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-white/20 text-center">
         <div className="mb-8 flex justify-center">
-          <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center">
-            <Settings className="w-12 h-12 text-white" />
+          <div className="w-20 h-20 bg-white/20 rounded-3xl flex items-center justify-center shadow-inner">
+            <Smartphone className="w-12 h-12 text-white drop-shadow-md" />
           </div>
         </div>
         
@@ -25,7 +25,7 @@ export default function Member5() {
 
         <Link 
           href="/" 
-          className="group flex items-center justify-center gap-2 bg-white text-[#F59E0B] font-bold py-4 px-8 rounded-2xl hover:scale-105 transition-all duration-300 shadow-xl shadow-black/10"
+          className="group flex items-center justify-center gap-2 bg-white text-[#84CC16] font-bold py-4 px-8 rounded-2xl hover:scale-105 transition-all duration-300 shadow-xl shadow-black/10"
         >
           메인 페이지로 돌아가기
           <RotateCcw className="w-5 h-5 group-hover:rotate-180 transition-transform duration-500" />
