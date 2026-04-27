@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Users, Sparkles, Rocket } from 'lucide-react';
 
 export default function Home() {
@@ -18,8 +19,14 @@ export default function Home() {
 
         {/* Icon Header */}
         <div className="mb-10 flex justify-center">
-          <div className="w-24 h-24 bg-white/20 rounded-3xl flex items-center justify-center shadow-inner transform rotate-3 hover:rotate-0 transition-transform duration-500">
-            <Users className="w-14 h-14 text-white" />
+          <div className="w-40 h-40 bg-white rounded-[2rem] flex items-center justify-center shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden border-8 border-white/50">
+            <Image 
+              src="/ironman-logo.png" 
+              alt="Iron Man Logo" 
+              width={140} 
+              height={140} 
+              className="object-contain"
+            />
           </div>
         </div>
         
