@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { RotateCcw, Smartphone, Home } from 'lucide-react';
+import { RotateCcw, Car, Home } from 'lucide-react';
 
 export default function Member5() {
   return (
@@ -10,7 +10,7 @@ export default function Member5() {
       <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-white/20 text-center">
         <div className="mb-8 flex justify-center">
           <div className="w-20 h-20 bg-white/20 rounded-3xl flex items-center justify-center shadow-inner">
-            <Smartphone className="w-12 h-12 text-white drop-shadow-md" />
+            <Car className="w-12 h-12 text-white drop-shadow-md" />
           </div>
         </div>
         
