@@ -28,7 +28,7 @@ export default function Member2() {
         <p className="text-amber-800/80 mb-10 leading-relaxed font-medium">
           안녕하세요! <span className="text-amber-900 font-bold underline decoration-amber-400/30 underline-offset-4">팀원 2</span>입니다.<br />
           우리는 지금 깃허브 포크와 협업을<br />
-          예술처럼 연습하고 있습니다. ✨
+          피땀으로 연습하고 있습니다. ✨
         </p>
 
         <Link
