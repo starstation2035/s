@@ -19,10 +19,10 @@ export default function Member2() {
           </div>
         </div>
 
-        <div className="relative inline-block mb-4">
-          <h1 className="text-8xl font-black text-amber-600 opacity-10 absolute -top-8 -left-4 select-none">02</h1>
-          <h2 className="text-3xl font-extrabold tracking-tight mb-2 relative z-10 text-amber-900">팀원 2의 공간</h2>
-          <div className="h-1.5 w-12 bg-amber-400/40 mx-auto rounded-full mb-6" />
+        <div className="mb-6">
+          <h1 className="text-7xl font-black mb-2 opacity-90 text-amber-600">02</h1>
+          <h2 className="text-3xl font-extrabold tracking-tight mb-2 text-amber-900">팀원 2의 공간</h2>
+          <div className="h-1.5 w-12 bg-amber-400/40 mx-auto rounded-full" />
         </div>
 
         <p className="text-amber-800/80 mb-10 leading-relaxed font-medium">
